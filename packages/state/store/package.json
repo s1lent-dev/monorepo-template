@@ -1,0 +1,25 @@
+{
+  "name": "@nexync/store",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "react-redux": "^9.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "typescript": "^5.8.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/store.ts",
+      "default": "./src/store.ts"
+    }
+  }
+}

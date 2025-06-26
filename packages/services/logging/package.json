@@ -1,0 +1,24 @@
+{
+  "name": "@nexync/logging",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsup --clean",
+    "lint": "npx eslint . --ext .ts,.tsx"
+  },
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^9.26.0",
+    "@sentry/node": "^9.26.0",
+    "@sentry/react": "^9.26.0",
+    "@sentry/tracing": "^7.120.3",
+    "pino": "^9.7.0",
+    "pino-http": "^10.5.0",
+    "pino-pretty": "^13.0.0"
+  }
+}

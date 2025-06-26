@@ -1,0 +1,25 @@
+{
+  "name": "@nexync/hooks",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-error-boundary": "^6.0.0",
+    "@tanstack/react-pacer": "^0.8.0",
+    "lodash": "^4.17.21",
+    "lru-cache": "^11.1.0"
+  },
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  }
+}

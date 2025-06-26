@@ -1,0 +1,29 @@
+{
+    "name": "@nexync/theme",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint . --ext .ts,.tsx",
+        "lint:fix": "eslint . --ext .ts,.tsx --fix",
+        "format": "prettier . --write"
+    },
+    "dependencies": {
+        "next": "15.3.3",
+        "next-themes": "^0.4.6",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@nexync/lintconfig": "workspace:*",
+        "@nexync/tsconfig": "workspace:*",
+        "@tailwindcss/postcss": "^4.0.8",
+        "@turbo/gen": "^2.4.2",
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "tailwindcss": "^4.0.8",
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.2"
+    },
+    "exports": {}
+}

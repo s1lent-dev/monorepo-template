@@ -1,0 +1,17 @@
+{
+    "extends": "@nexync/tsconfig/tsconfig.expo.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "@ui/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

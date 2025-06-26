@@ -1,0 +1,16 @@
+{
+    "extends": "@nexync/tsconfig/tsconfig.node.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "@helpers/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}

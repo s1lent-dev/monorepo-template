@@ -1,0 +1,12 @@
+{
+    "extends": "@nexync/tsconfig/tsconfig.next.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "@nexync/ui-web/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["node_modules"]
+}

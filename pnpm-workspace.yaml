@@ -1,0 +1,10 @@
+packages:
+  - "apps/*"
+  - "packages/config/*"
+  - "packages/core/*"
+  - "packages/database/*"
+  - "packages/microservices/*"
+  - "packages/services/*"
+  - "packages/state/*"
+  - "packages/tests/*"
+  - "packages/design/*"

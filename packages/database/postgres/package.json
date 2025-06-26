@@ -1,0 +1,30 @@
+{
+  "name": "@nexync/postgres",
+  "description": "Postgres database integration for Nexync",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup --clean",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "dp:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "lint": "npx eslint . --ext .ts,.tsx",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "prisma": "^6.8.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "@prisma/extension-accelerate": "^2.0.1"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@nexync/utils",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint . --ext .ts,.tsx"
+  },
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@tanstack/react-pacer": "^0.8.0",
+    "bcrypt": "^6.0.0",
+    "lodash": "^4.17.21",
+    "lru-cache": "^11.1.0",
+    "otp-generator": "^4.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "next": "15.3.3"
+  }
+}

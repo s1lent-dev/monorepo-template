@@ -1,0 +1,27 @@
+{
+  "name": "@nexync/integration",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tanstack/react-query": "^5.80.5",
+    "@trpc/client": "^11.3.0",
+    "@trpc/next": "^11.3.0",
+    "@trpc/react-query": "^11.3.0",
+    "@trpc/server": "^11.3.0",
+    "axios": "^1.9.0",
+    "graphql": "^16.11.0",
+    "socket.io-client": "^4.8.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@nexync/lintconfig": "workspace:*",
+    "@nexync/tsconfig": "workspace:*",
+    "typescript": "^5.8.2"
+  }
+}

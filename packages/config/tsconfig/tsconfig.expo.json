@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+  "display": "Expo",
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react-native",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "bundler",
+    "customConditions": ["react-native"],
+    "allowJs": true,
+    "noEmit": true,
+  }
+}

@@ -1,0 +1,100 @@
+web- nextjs website --> v1
+admin - vite website --> v2
+mobile - expo app --> v1
+server - node + nestjs server --> v3
+rest - node + express rest api server --> v1
+graphql - node + express + graphql server --> v2
+trpc - node + express + trpc server --> v2
+web3 - node + express + hardhat server + anchor --> v3
+socket - node + socket.io + webrtc server --> v1
+cloudflare - cloudflare worker --> v2
+gateway - node + express + gateway server --> v1
+batch - node + aws batch server --> v2
+serverless - node + aws lambda server --> v1
+sagemaker - python + aws sagemaker server --> v3
+fastapi - python + fastapi server --> v3
+mcp server - node + express + mcp server --> v3
+cargo - rust + actix-web server --> v3
+spring - java + spring boot server --> v3
+
+
+- apps 
+    - web
+    - admin
+    - mobile
+    - server
+    - rest
+    - graphql
+    - trpc
+    - web3
+    - socket
+    - cloudflare
+    - gateway
+    - batch
+    - serverless
+    - sagemaker
+    - fastapi
+    - mcp-server
+    - cargo
+    - spring
+- packages: 
+  - config
+    - lintconfig
+    - tsconfig
+  - core 
+    - types 
+    - interfaces
+    - enums 
+    - schemas
+    - structs
+  - database 
+    - postgres
+    - mongo
+    - dynamo
+    - s3
+    - blockchain --> anchor + hardhat
+  - microservices
+    - redis
+    - rabbitmq
+    - bullmq
+    - kafka
+    - elasticsearch
+    - flink
+    - typesense
+  - services
+    - auth
+    - cron
+    - firebase
+    - stripe
+    - twillio
+    - n8n
+    - logging
+    - monitoring
+    - webhook
+  - xr
+    - threejs
+    - webxr
+    - unity
+    - unreal
+    - ar 
+    - vr
+  - neuron 
+    - langchain 
+    - ml-models
+    - llm
+    - ai
+  - shared 
+    - utils
+    - lib
+    - helpers
+    - hooks
+    - constants
+  - state 
+    - store
+    - context
+    - integration
+  - ui
+    - web
+    - mobile
+
+

@@ -1,0 +1,12 @@
+{
+    "extends": "@nexync/tsconfig/tsconfig.react.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "baseUrl": ".",
+        "paths": {
+            "@nexync/context/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx"],
+    "exclude": ["node_modules", "dist"]
+}

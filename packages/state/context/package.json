@@ -1,0 +1,28 @@
+{
+    "name": "@nexync/context",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint . --ext .ts,.tsx",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "@nexync/store": "workspace:*",
+        "@reduxjs/toolkit": "^2.8.2",
+        "react-redux": "^9.2.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@nexync/lintconfig": "workspace:*",
+        "@nexync/tsconfig": "workspace:*",
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.2"
+    },
+    "exports": {
+        "./store": {
+            "types": "./src/store-context/index.ts",
+            "import": "./src/store-context/index.ts"
+        }
+    }
+}
