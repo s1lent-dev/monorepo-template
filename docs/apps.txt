@@ -43,8 +43,9 @@ spring - java + spring boot server --> v3
     - tsconfig
   - core 
     - types 
-    - interfaces
-    - enums 
+    - utils
+    - constants
+    - hooks 
     - schemas
     - structs
   - database 
@@ -75,26 +76,20 @@ spring - java + spring boot server --> v3
     - threejs
     - webxr
     - unity
-    - unreal
     - ar 
     - vr
   - neuron 
     - langchain 
     - ml-models
-    - llm
-    - ai
-  - shared 
-    - utils
-    - lib
-    - helpers
-    - hooks
-    - constants
+    - ai-models
+    - agents
   - state 
     - store
     - context
     - integration
-  - ui
-    - web
-    - mobile
+  - design
+    - ui-web
+    - ui-mobile
+    - theme
 
 

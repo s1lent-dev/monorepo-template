@@ -2,9 +2,10 @@
     "extends": "@nexync/tsconfig/tsconfig.node.json",
     "compilerOptions": {
         "rootDir": "src",
+        "outDir": "dist",
         "baseUrl": ".",
         "paths": {
-            "@helpers/*": ["src/*"]
+            "@envconfig/*": ["src/*"]
         }
     },
     "include": [
@@ -12,5 +13,6 @@
     ],
     "exclude": [
         "node_modules",
+        "dist",
     ]
 }

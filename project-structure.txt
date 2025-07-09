@@ -1,0 +1,739 @@
+tree -L 8 -I "node_modules|dist|.git" > project-structure.txt
+
+nexync
+├── LICENSE
+├── README.md
+├── apps
+│   ├── admin
+│   │   ├── README.md
+│   │   ├── components.json
+│   │   ├── eslint.config.js
+│   │   ├── index.html
+│   │   ├── package.json
+│   │   ├── prettier.config.js
+│   │   ├── public
+│   │   │   ├── favicon.ico
+│   │   │   ├── logo192.png
+│   │   │   ├── logo512.png
+│   │   │   ├── manifest.json
+│   │   │   └── robots.txt
+│   │   ├── src
+│   │   │   ├── App.test.tsx
+│   │   │   ├── App.tsx
+│   │   │   ├── assets
+│   │   │   ├── components
+│   │   │   │   └── Header.tsx
+│   │   │   ├── layouts
+│   │   │   ├── logo.svg
+│   │   │   ├── main.tsx
+│   │   │   ├── pages
+│   │   │   ├── reportWebVitals.ts
+│   │   │   ├── routes
+│   │   │   ├── styles.css
+│   │   │   └── themes
+│   │   ├── tsconfig.json
+│   │   └── vite.config.js
+│   ├── batch
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── jobs
+│   │   │   ├── middlewares
+│   │   │   ├── pipelines
+│   │   │   └── workers
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── cloudflare
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── cache
+│   │   │   ├── router
+│   │   │   ├── utility
+│   │   │   └── workers
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── gateway
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── controllers
+│   │   │   ├── middlewares
+│   │   │   └── routes
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── graphql
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── middlewares
+│   │   │   ├── resolvers
+│   │   │   └── schemas
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── mobile
+│   │   ├── README.md
+│   │   ├── app.json
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── scripts
+│   │   │   └── reset-project.js
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (tabs)
+│   │   │   │   │   ├── _layout.tsx
+│   │   │   │   │   ├── explore.tsx
+│   │   │   │   │   └── index.tsx
+│   │   │   │   ├── +not-found.tsx
+│   │   │   │   └── _layout.tsx
+│   │   │   ├── assets
+│   │   │   │   ├── fonts
+│   │   │   │   │   └── SpaceMono-Regular.ttf
+│   │   │   │   └── images
+│   │   │   │       ├── adaptive-icon.png
+│   │   │   │       ├── favicon.png
+│   │   │   │       ├── icon.png
+│   │   │   │       ├── partial-react-logo.png
+│   │   │   │       ├── react-logo.png
+│   │   │   │       ├── react-logo@2x.png
+│   │   │   │       ├── react-logo@3x.png
+│   │   │   │       └── splash-icon.png
+│   │   │   ├── components
+│   │   │   │   ├── Collapsible.tsx
+│   │   │   │   ├── ExternalLink.tsx
+│   │   │   │   ├── HapticTab.tsx
+│   │   │   │   ├── HelloWave.tsx
+│   │   │   │   ├── ParallaxScrollView.tsx
+│   │   │   │   ├── ThemedText.tsx
+│   │   │   │   ├── ThemedView.tsx
+│   │   │   │   └── ui
+│   │   │   │       ├── IconSymbol.ios.tsx
+│   │   │   │       ├── IconSymbol.tsx
+│   │   │   │       ├── TabBarBackground.ios.tsx
+│   │   │   │       └── TabBarBackground.tsx
+│   │   │   ├── constants
+│   │   │   │   └── Colors.ts
+│   │   │   └── hooks
+│   │   │       ├── useColorScheme.ts
+│   │   │       ├── useColorScheme.web.ts
+│   │   │       └── useThemeColor.ts
+│   │   └── tsconfig.json
+│   ├── rest
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── controllers
+│   │   │   ├── middlewares
+│   │   │   └── routes
+│   │   ├── tests
+│   │   └── tsconfig.json
+│   ├── server
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── controllers
+│   │   │   ├── middlewares
+│   │   │   └── routes
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── serverless
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── handlers
+│   │   │   ├── lambdas
+│   │   │   └── middlewares
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── socket
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── events
+│   │   │   ├── middlewares
+│   │   │   └── services
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   ├── trpc
+│   │   ├── eslint.config.js
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── app.ts
+│   │   │   ├── controllers
+│   │   │   ├── middlewares
+│   │   │   └── routes
+│   │   ├── tests
+│   │   ├── tsconfig.json
+│   │   └── tsup.config.ts
+│   └── web
+│       ├── README.md
+│       ├── components.json
+│       ├── eslint.config.mjs
+│       ├── next-env.d.ts
+│       ├── next.config.ts
+│       ├── package.json
+│       ├── postcss.config.mjs
+│       ├── prettier.config.mjs
+│       ├── public
+│       │   ├── file.svg
+│       │   ├── globe.svg
+│       │   ├── next.svg
+│       │   ├── vercel.svg
+│       │   └── window.svg
+│       ├── src
+│       │   ├── app
+│       │   │   ├── favicon.ico
+│       │   │   ├── globals.css
+│       │   │   ├── layout.tsx
+│       │   │   └── page.tsx
+│       │   ├── assets
+│       │   ├── components
+│       │   │   └── test.tsx
+│       │   ├── layouts
+│       │   ├── pages
+│       │   └── theme
+│       └── tsconfig.json
+├── docs
+│   ├── apps.txt
+│   ├── architecture
+│   ├── contracts
+│   └── design
+├── infra
+│   ├── cloudformation
+│   ├── docker
+│   ├── kubernetes
+│   └── terraform
+├── package.json
+├── packages
+│   ├── config
+│   │   ├── lintconfig
+│   │   │   ├── eslint.config.expo.js
+│   │   │   ├── eslint.config.js
+│   │   │   ├── eslint.config.next.js
+│   │   │   ├── eslint.config.node.js
+│   │   │   ├── eslint.config.react.js
+│   │   │   ├── eslint.config.vite.js
+│   │   │   ├── index.d.ts
+│   │   │   ├── package.json
+│   │   │   ├── prettier.config.js
+│   │   │   └── rules.js
+│   │   └── tsconfig
+│   │       ├── package-lock.json
+│   │       ├── package.json
+│   │       ├── tsconfig.base.json
+│   │       ├── tsconfig.expo.json
+│   │       ├── tsconfig.next.json
+│   │       ├── tsconfig.node.json
+│   │       ├── tsconfig.react.json
+│   │       └── tsconfig.vite.json
+│   ├── core
+│   │   ├── constants
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── backend
+│   │   │   │   ├── database
+│   │   │   │   ├── frontend
+│   │   │   │   │   └── index.ts
+│   │   │   │   ├── services
+│   │   │   │   └── shared
+│   │   │   └── tsconfig.json
+│   │   ├── helpers
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   └── tsconfig.json
+│   │   ├── hooks
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── prettier.config.js
+│   │   │   ├── src
+│   │   │   │   ├── dynamic
+│   │   │   │   │   ├── useDynamic.tsx
+│   │   │   │   │   └── useSuspense.tsx
+│   │   │   │   ├── effects
+│   │   │   │   │   └── usePrevEffect.ts
+│   │   │   │   ├── performance
+│   │   │   │   │   ├── useCache.ts
+│   │   │   │   │   ├── useDebounce.ts
+│   │   │   │   │   ├── usePolling.ts
+│   │   │   │   │   ├── useRateLimiter.ts
+│   │   │   │   │   └── useThrottle.ts
+│   │   │   │   ├── storage
+│   │   │   │   │   ├── useBrowserCache.ts
+│   │   │   │   │   ├── useIndexedDB.ts
+│   │   │   │   │   ├── useLocalStorage.ts
+│   │   │   │   │   └── useSessionStorage.ts
+│   │   │   │   ├── ui
+│   │   │   │   │   ├── useDoubleClick.ts
+│   │   │   │   │   ├── useFocus.ts
+│   │   │   │   │   ├── useKeyboardShortcuts.ts
+│   │   │   │   │   ├── useMobile.ts
+│   │   │   │   │   ├── useOutsideClick.ts
+│   │   │   │   │   └── useResponsive.tsx
+│   │   │   │   └── utilities
+│   │   │   │       ├── useInfiniteScroll.ts
+│   │   │   │       ├── usePagination.ts
+│   │   │   │       ├── useToggle.ts
+│   │   │   │       └── useVirtualizedScroll.ts
+│   │   │   └── tsconfig.json
+│   │   ├── lib
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   └── tsconfig.json
+│   │   ├── schemas
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── rest
+│   │   │   │   │   └── post.ts
+│   │   │   │   └── trpc
+│   │   │   └── tsconfig.json
+│   │   ├── structs
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── rest
+│   │   │   │   │   └── post.ts
+│   │   │   │   └── trpc
+│   │   │   └── tsconfig.json
+│   │   ├── types
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── chat-types
+│   │   │   │   │   └── chat.types.ts
+│   │   │   │   ├── company-types
+│   │   │   │   ├── context-types
+│   │   │   │   ├── graphql-types
+│   │   │   │   ├── location-types
+│   │   │   │   ├── post-types
+│   │   │   │   ├── rest-types
+│   │   │   │   ├── socket-types
+│   │   │   │   ├── store-types
+│   │   │   │   ├── trpc-types
+│   │   │   │   └── user-types
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   └── utils
+│   │       ├── eslint.config.js
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   ├── common
+│   │       │   │   ├── array-utils.ts
+│   │       │   │   ├── date-utils.ts
+│   │       │   │   └── string-utils.ts
+│   │       │   ├── db
+│   │       │   ├── index.ts
+│   │       │   ├── performance
+│   │       │   └── ui
+│   │       └── tsconfig.json
+│   ├── database
+│   │   ├── dynamo
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── client
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── models
+│   │   │   │   └── queries
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── mongo
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── client
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── models
+│   │   │   │   └── queries
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── postgres
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── prisma
+│   │   │   │   ├── migrations
+│   │   │   │   └── schema
+│   │   │   │       ├── schema.prisma
+│   │   │   │       └── user.schema.prisma
+│   │   │   ├── src
+│   │   │   │   ├── client
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── postgis
+│   │   │   │   ├── queries
+│   │   │   │   └── sql
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   └── s3
+│   │       ├── eslint.config.js
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   ├── client
+│   │       │   ├── index.ts
+│   │       │   ├── models
+│   │       │   └── queries
+│   │       ├── tests
+│   │       ├── tsconfig.json
+│   │       └── tsup.config.ts
+│   ├── design
+│   │   ├── mobile
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── index.ts
+│   │   │   │   └── index.tsx
+│   │   │   └── tsconfig.json
+│   │   ├── theme
+│   │   │   ├── components.json
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── postcss.config.mjs
+│   │   │   ├── prettier.config.js
+│   │   │   ├── src
+│   │   │   │   ├── system
+│   │   │   │   │   ├── dark.ts
+│   │   │   │   │   ├── light.ts
+│   │   │   │   │   └── theme.ts
+│   │   │   │   └── tokens
+│   │   │   │       ├── border.ts
+│   │   │   │       ├── breakpoints.ts
+│   │   │   │       ├── colors.ts
+│   │   │   │       ├── durations.ts
+│   │   │   │       ├── radius.ts
+│   │   │   │       ├── shadows.ts
+│   │   │   │       ├── sizes.ts
+│   │   │   │       ├── spacing.ts
+│   │   │   │       └── typography.ts
+│   │   │   └── tsconfig.json
+│   │   └── web
+│   │       ├── components.json
+│   │       ├── eslint.config.js
+│   │       ├── package.json
+│   │       ├── postcss.config.mjs
+│   │       ├── prettier.config.js
+│   │       ├── src
+│   │       │   ├── components
+│   │       │   │   ├── feedback
+│   │       │   │   │   ├── skeleton
+│   │       │   │   │   │   └── skeleton.tsx
+│   │       │   │   │   ├── spinner
+│   │       │   │   │   │   └── spinner.tsx
+│   │       │   │   │   └── toast
+│   │       │   │   │       └── sonner.tsx
+│   │       │   │   ├── inputs
+│   │       │   │   │   ├── autocomplete
+│   │       │   │   │   ├── checkbox
+│   │       │   │   │   │   └── checkbox.tsx
+│   │       │   │   │   ├── label
+│   │       │   │   │   │   └── label.tsx
+│   │       │   │   │   ├── otp-input
+│   │       │   │   │   │   └── input-otp.tsx
+│   │       │   │   │   ├── radio
+│   │       │   │   │   │   └── radio-group.tsx
+│   │       │   │   │   ├── rating
+│   │       │   │   │   ├── search
+│   │       │   │   │   ├── select
+│   │       │   │   │   │   └── select.tsx
+│   │       │   │   │   ├── slider
+│   │       │   │   │   │   └── slider.tsx
+│   │       │   │   │   ├── switch
+│   │       │   │   │   │   └── switch.tsx
+│   │       │   │   │   ├── text-input
+│   │       │   │   │   │   └── input.tsx
+│   │       │   │   │   ├── textarea
+│   │       │   │   │   │   └── textarea.tsx
+│   │       │   │   │   ├── toggle
+│   │       │   │   │   │   └── toggle.tsx
+│   │       │   │   │   └── toggle-group
+│   │       │   │   │       └── toggle-group.tsx
+│   │       │   │   ├── layout
+│   │       │   │   │   ├── aspect-ratio
+│   │       │   │   │   │   └── aspect-ratio.tsx
+│   │       │   │   │   ├── container
+│   │       │   │   │   ├── grid
+│   │       │   │   │   ├── resizable
+│   │       │   │   │   │   └── resizable.tsx
+│   │       │   │   │   ├── scrollable
+│   │       │   │   │   │   └── scroll-area.tsx
+│   │       │   │   │   └── stack
+│   │       │   │   ├── navigation
+│   │       │   │   │   ├── breadcrumb
+│   │       │   │   │   │   └── breadcrumb.tsx
+│   │       │   │   │   ├── command-menu
+│   │       │   │   │   │   └── command.tsx
+│   │       │   │   │   ├── context-menu
+│   │       │   │   │   │   └── context-menu.tsx
+│   │       │   │   │   ├── dropdown-menu
+│   │       │   │   │   │   └── dropdown-menu.tsx
+│   │       │   │   │   ├── form-navigation
+│   │       │   │   │   ├── menubar
+│   │       │   │   │   │   └── menubar.tsx
+│   │       │   │   │   ├── navigation-menu
+│   │       │   │   │   │   └── navigation-menu.tsx
+│   │       │   │   │   ├── pagination
+│   │       │   │   │   │   └── pagination.tsx
+│   │       │   │   │   └── tabs
+│   │       │   │   │       └── tabs.tsx
+│   │       │   │   ├── others
+│   │       │   │   │   ├── calander
+│   │       │   │   │   │   └── calendar.tsx
+│   │       │   │   │   ├── collapsible
+│   │       │   │   │   │   └── collapsible.tsx
+│   │       │   │   │   ├── progress
+│   │       │   │   │   │   └── progress.tsx
+│   │       │   │   │   └── table
+│   │       │   │   │       └── table.tsx
+│   │       │   │   ├── overlay
+│   │       │   │   │   ├── alert
+│   │       │   │   │   │   └── alert.tsx
+│   │       │   │   │   ├── alert-dialog
+│   │       │   │   │   │   └── alert-dialog.tsx
+│   │       │   │   │   ├── dialog
+│   │       │   │   │   │   └── dialog.tsx
+│   │       │   │   │   ├── drawer
+│   │       │   │   │   │   └── drawer.tsx
+│   │       │   │   │   ├── hovercard
+│   │       │   │   │   │   └── hover-card.tsx
+│   │       │   │   │   ├── modal
+│   │       │   │   │   ├── popover
+│   │       │   │   │   │   └── popover.tsx
+│   │       │   │   │   ├── sheet
+│   │       │   │   │   │   └── sheet.tsx
+│   │       │   │   │   └── tooltip
+│   │       │   │   │       └── tooltip.tsx
+│   │       │   │   └── primitives
+│   │       │   │       ├── accordion
+│   │       │   │       │   └── accordion.tsx
+│   │       │   │       ├── avatar
+│   │       │   │       │   └── avatar.tsx
+│   │       │   │       ├── badge
+│   │       │   │       │   └── badge.tsx
+│   │       │   │       ├── button
+│   │       │   │       │   └── button.tsx
+│   │       │   │       ├── card
+│   │       │   │       │   └── card.tsx
+│   │       │   │       ├── icon
+│   │       │   │       ├── image
+│   │       │   │       ├── link
+│   │       │   │       ├── separator
+│   │       │   │       │   └── separator.tsx
+│   │       │   │       └── typography
+│   │       │   │           └── typography.tsx
+│   │       │   ├── layouts
+│   │       │   │   ├── dashboard
+│   │       │   │   ├── home
+│   │       │   │   └── landing
+│   │       │   ├── lib
+│   │       │   │   └── utils.ts
+│   │       │   ├── styles
+│   │       │   │   └── globals.css
+│   │       │   └── ui
+│   │       │       ├── forms
+│   │       │       │   ├── account
+│   │       │       │   ├── auth
+│   │       │       │   │   ├── login-form
+│   │       │       │   │   └── signup-form
+│   │       │       │   └── profile
+│   │       │       │       ├── education-form
+│   │       │       │       └── profile-form
+│   │       │       ├── frame
+│   │       │       │   ├── footers
+│   │       │       │   └── headers
+│   │       │       ├── navigations
+│   │       │       │   ├── navbar
+│   │       │       │   ├── sidebar
+│   │       │       │   └── topbar
+│   │       │       └── sections
+│   │       │           ├── chat
+│   │       │           ├── content
+│   │       │           ├── dashboard
+│   │       │           ├── job
+│   │       │           ├── landing
+│   │       │           ├── marketplace
+│   │       │           └── social
+│   │       └── tsconfig.json
+│   ├── microservices
+│   │   ├── bullmq
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── elasticsearch
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── kafka
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── rabbitmq
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── redis
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   └── typesense
+│   │       ├── eslint.config.js
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   └── index.ts
+│   │       ├── tests
+│   │       ├── tsconfig.json
+│   │       └── tsup.config.ts
+│   ├── services
+│   │   ├── auth
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── cron
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── firebase
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── logging
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── monitoring
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── n8n
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── stripe
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   ├── twillio
+│   │   │   ├── eslint.config.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── index.ts
+│   │   │   ├── tests
+│   │   │   ├── tsconfig.json
+│   │   │   └── tsup.config.ts
+│   │   └── webhook
+│   │       ├── eslint.config.js
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   └── index.ts
+│   │       ├── tests
+│   │       ├── tsconfig.json
+│   │       └── tsup.config.ts
+│   └── state
+│       ├── context
+│       │   ├── eslint.config.js
+│       │   ├── package.json
+│       │   ├── prettier.config.js
+│       │   ├── src
+│       │   │   ├── index.ts
+│       │   │   └── store-context
+│       │   │       ├── index.ts
+│       │   │       └── store.provider.tsx
+│       │   ├── tests
+│       │   └── tsconfig.json
+│       ├── integration
+│       │   ├── eslint.config.js
+│       │   ├── package.json
+│       │   ├── src
+│       │   │   ├── apollo
+│       │   │   │   └── graphql.ts
+│       │   │   ├── index.ts
+│       │   │   ├── rtk
+│       │   │   ├── socket
+│       │   │   ├── tanstack
+│       │   │   ├── thunk
+│       │   │   └── trpc
+│       │   ├── tests
+│       │   └── tsconfig.json
+│       └── store
+│           ├── eslint.config.js
+│           ├── package.json
+│           ├── src
+│           │   ├── middlewares
+│           │   ├── reducers
+│           │   ├── slices
+│           │   └── store.ts
+│           ├── tests
+│           └── tsconfig.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── project-structure.txt
+├── scripts
+└── turbo.json

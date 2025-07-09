@@ -3,14 +3,14 @@
 import * as React from 'react';
 import { Command as CommandPrimitive } from 'cmdk';
 import { SearchIcon } from 'lucide-react';
-import { cn } from '@nexync/ui-web/lib/utils';
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@nexync/ui-web/components/overlay/dialog/dialog';
+} from '../../overlay/dialog/dialog';
+import { cn } from '../../../lib/utils';
 
 function Command({ className, ...props }: React.ComponentProps<typeof CommandPrimitive>) {
     return (

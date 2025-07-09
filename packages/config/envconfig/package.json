@@ -1,8 +1,9 @@
 {
-  "name": "@nexync/helpers",
+  "name": "@nexync/envconfig",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "tsup --clean",
     "lint": "npx eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
@@ -10,5 +11,8 @@
     "@nexync/tsconfig": "workspace:*",
     "tsup": "^8.5.0",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+
   }
 }

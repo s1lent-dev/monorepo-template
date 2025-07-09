@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Button } from '@nexync/ui-web/components';
 import type { JSX } from 'react';
 
 export default function Home(): JSX.Element {
@@ -79,6 +80,9 @@ export default function Home(): JSX.Element {
                     Go to nextjs.org →
                 </a>
             </footer>
+            <Button variant="default" size="default">
+                Click Me
+            </Button>
         </div>
     );
 }

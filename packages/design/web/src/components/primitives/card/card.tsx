@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cn } from '@nexync/ui-web/lib/utils';
+import { cn } from '../../../lib/utils';
 
 function Card({ className, ...props }: React.ComponentProps<'div'>): React.JSX.Element {
     return (

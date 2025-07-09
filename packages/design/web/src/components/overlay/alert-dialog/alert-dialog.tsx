@@ -2,8 +2,8 @@
 
 import * as React from 'react';
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
-import { cn } from '@nexync/ui-web/lib/utils';
-import { buttonVariants } from '@nexync/ui-web/components/primitives/button/button';
+import { cn } from '../../../lib/utils';
+import { buttonVariants } from '../../primitives/button/button';
 
 function AlertDialog({ ...props }: React.ComponentProps<typeof AlertDialogPrimitive.Root>) {
     return <AlertDialogPrimitive.Root data-slot="alert-dialog" {...props} />;
